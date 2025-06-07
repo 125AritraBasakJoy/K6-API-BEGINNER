@@ -7,6 +7,7 @@ export let options = {
     };  
 
 export default function () {
+    for (let i = 0; i <= 5; i++) {
     let payload = JSON.stringify({
         name: 'John Doe',
         job: 'Software Engineer',
@@ -19,4 +20,5 @@ export default function () {
         'Response has ID': (r) => JSON.parse(r.body).id !== undefined, // Check if the response contains an ID
     });
     sleep(1); // Sleep for 1 second to simulate user wait time
+}
 }
