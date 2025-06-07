@@ -12,4 +12,4 @@ k6-api-testing/
 
 └── Create users.csv
 
-└── create_users_csv_test.js
+└── Create_users_csv_test.js
