@@ -9,3 +9,7 @@ k6-api-testing/
 ├── create_user_test.js
 
 └── delete_user_test.js
+
+└── Create users.csv
+
+└── create_users_csv_test.js
