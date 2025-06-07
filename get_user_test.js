@@ -14,10 +14,12 @@ export let options = {
 };
 
 export default function () {
+  for (let i = 0; i < 5; i++) {
     let res = http.get('https://jsonplaceholder.typicode.com/users/1'); // Fetch user with ID 1
 
     check(res, {
         'Status is 200': (r) => r.status === 200, // Check if the response status is 200 OK
         'Response has ID 1': (r) => JSON.parse(r.body).id === 1, // Check if the user ID in the response is 1
     });
+  }
 }
